@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css more selectors</title>
+    <style>
+        .boxes {
+            border: 2px solid black;
+            padding: 24px;
+            display: flow-root;
+            overflow: auto;
+        }
+
+        /* .boxes:first-child{
+            background-color: red;
+            border: 5px solid aqua;
+        } */
+        .box:nth-child(even) {
+            font-size: large;
+            background-color: blue;
+            color: white;
+        }
+
+        .box {
+            height: 20vh;
+            width: 50vw;
+            border: 2px solid purple;
+            margin: 5px;
+            overflow: auto;
+        }
+        .boxes::before{
+            content: "this is before content";
+        }
+        .boxes::after{
+            content: "this is after content";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non reiciendis, reprehenderit facere
+            doloribus, inventore facilis fugiat dolore est a harum magnam corrupti!
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex doloribus quas, similique sit placeat excepturi, necessitatibus nesciunt officiis recusandae dolorum, perspiciatis sapiente!
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt ut temporibus nemo similique, excepturi esse explicabo commodi quae delectus beatae rerum quisquam ipsa voluptatem deserunt perferendis nisi doloribus, deleniti consectetur. Beatae rem omnis molestias neque et? Nobis sunt voluptates provident, facere totam explicabo.
+        </div>
+    </div>
+</body>
+
+</html>
