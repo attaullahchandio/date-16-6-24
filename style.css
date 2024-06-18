@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+background-color: purple;
+padding: 25px;
+position: sticky;
+box-sizing: border-box;
+}
+.nav ul li{
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}
+.section{
+    width: 97vw;
+    background-color: burlywood;
+    display: flex;
+    margin: 11px 9px;
+    box-sizing: border-box;
+}
+.section .sub-1{
+    width: 40vw;
+    height: 400px;
+    background-color: #2bab0d;
+    margin:  20px auto;
+}
